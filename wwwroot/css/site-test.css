@@ -1,0 +1,129 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+.hover {
+    border-bottom-color: yellow !important;
+}
+
+
+/*
+ * Base structure
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bg {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+.content-container {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    overflow-y: auto;
+    margin-right: env(safe-area-inset-right);
+    margin-left: env(safe-area-inset-left);
+    flex-direction: column;
+    -ms-flex-direction: column;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.content-block {
+    max-width: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+    cursor: pointer;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+}

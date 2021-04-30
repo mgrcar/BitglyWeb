@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>How Kiwi Lost His Wings - @ViewBag.PageTitle</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <div class="bg">
+        <div class="content-container">
+            <header class="content-block masthead mb-auto">
+                @await Html.PartialAsync("~/Pages/Shared/_Nav.cshtml")
+            </header>
+
+            <main class="content-block inner cover">
+                <h1 class="cover-heading">How Kiwi Lost His Wings</h1>
+                @RenderBody()
+            </main>
+
+            <footer class="content-block mastfoot mt-auto">
+                @await Html.PartialAsync("~/Pages/Shared/_Footer.cshtml")
+            </footer>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
+</html>
